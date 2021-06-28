@@ -1,0 +1,2 @@
+# ClipboardCopy
+A simple ClipboardCopy
