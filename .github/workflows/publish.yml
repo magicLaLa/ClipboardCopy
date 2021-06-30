@@ -35,12 +35,9 @@ jobs:
         with:
           node-version: '14.x'
           registry-url: https://registry.npmjs.org/
-      - name: Install yarn
-        run: npm install yarn
-      - name: Install github-release-from-changelog
-        run: yarn global add github-release-from-changelog
-      - name: github-release-from-changelog
-        run: github-release-from-changelog
+      - run: npm install yarn
+      - run: npm i -g github-release-from-changelog
+      - run: github-release-from-changelog
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # 过程中会用到名为GITHUB_TOKEN的密钥，用于访问Github相关的API，不过这个私钥是Github Actions默认提供的，不需要额外设置。
 
