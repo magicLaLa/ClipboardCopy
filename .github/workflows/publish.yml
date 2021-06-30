@@ -24,4 +24,22 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  github-release: # 设置自动生成Github Release
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - name:  Checkout 🛎️
+        uses: actions/checkout@v2
+      - name:
+        uses: actions/setup-node@v1
+        with: Setup-node
+          node-version: '14.x'
+          registry-url: https://registry.npmjs.org/
+      - name: Install yarn
+        run: npm install yarn
+      - name: Install github-release-from-changelog
+        run: yarn add github-release-from-changelog -g
+        run: github-release-from-changelog
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # 过程中会用到名为GITHUB_TOKEN的密钥，用于访问Github相关的API，不过这个私钥是Github Actions默认提供的，不需要额外设置。
 
