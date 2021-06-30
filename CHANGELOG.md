@@ -1,3 +1,12 @@
+## [1.0.2-3](https://github.com/magicLaLa/ClipboardCopy/compare/v1.0.2-2...v1.0.2-3) (2021-06-30)
+
+
+### Bug Fixes
+
+* 修改 workflows ([3699e64](https://github.com/magicLaLa/ClipboardCopy/commit/3699e6416297ba74af81d5887b77956c467b3630))
+
+
+
 ## [1.0.2-2](https://github.com/magicLaLa/ClipboardCopy/compare/v1.0.2-1...v1.0.2-2) (2021-06-30)
 
 
