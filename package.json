@@ -1,6 +1,6 @@
 {
   "name": "@magic-tao/clipboardcopy",
-  "version": "1.0.3-1",
+  "version": "1.0.3-0",
   "description": "A simple clipboardcopy",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
@@ -12,7 +12,7 @@
     "test": "yarn jest --detectOpenHandles --forceExit",
     "doc": "typedoc --plugin typedoc-plugin-markdown --out ./docs/ src/index.ts",
     "build": "yarn clean && yarn lint && yarn test && rollup -c",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
@@ -41,6 +41,7 @@
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
+    "husky": "^6.0.0",
     "jest": "^27.0.5",
     "rimraf": "^3.0.2",
     "rollup": "^2.52.3",
@@ -49,5 +50,10 @@
     "typedoc": "^0.21.2",
     "typedoc-plugin-markdown": "^3.10.2",
     "typescript": "^4.3.4"
+  },
+  "husky": {
+    "hooks": {
+      "post-commit": "yarn version"
+    }
   }
 }
