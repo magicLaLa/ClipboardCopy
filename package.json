@@ -1,7 +1,10 @@
 {
-  "name": "clipboardcopy",
-  "version": "1.0.0",
+  "name": "@magic-tao/clipboardcopy",
+  "version": "1.0.1",
   "description": "A simple clipboardcopy",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "typings": "types/index.d.ts",
   "scripts": {
     "dev": "rollup -c -w",
     "clean": "rimraf lib types",
@@ -13,6 +16,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/magicLaLa/ClipboardCopy.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [
     "clipboardcopy",
