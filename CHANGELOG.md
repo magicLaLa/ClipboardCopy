@@ -1,3 +1,12 @@
+## [1.0.2-2](https://github.com/magicLaLa/ClipboardCopy/compare/v1.0.2-1...v1.0.2-2) (2021-06-30)
+
+
+### Bug Fixes
+
+* 修复 publish.yml ([35b842c](https://github.com/magicLaLa/ClipboardCopy/commit/35b842c0427f18e7b21370ac3a741f150f5dc906))
+
+
+
 ## [1.0.2-1](https://github.com/magicLaLa/ClipboardCopy/compare/v1.0.2...v1.0.2-1) (2021-06-30)
 
 
