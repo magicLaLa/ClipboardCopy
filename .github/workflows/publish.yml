@@ -38,7 +38,7 @@ jobs:
       - name: Install yarn
         run: npm install yarn
       - name: Install github-release-from-changelog
-        run: yarn add github-release-from-changelog -g
+        run: yarn global add github-release-from-changelog
       - name: github-release-from-changelog
         run: github-release-from-changelog
         env:
