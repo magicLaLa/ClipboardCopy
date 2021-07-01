@@ -4,6 +4,6 @@
 import ClipboardCopy from '../index';
 
 test('ClipboardCopy is reject', () => {
-  expect(new ClipboardCopy('tests').copy())
+  expect(new ClipboardCopy().copy('tests'))
   .rejects.toThrow();
 });

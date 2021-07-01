@@ -1,4 +1,4 @@
-[clipboardcopy](../README.md) / [Exports](../modules.md) / default
+[@magic-tao/clipboardcopy](../../README.md) / [Exports](../modules.md) / default
 
 # Class: default
 
@@ -18,23 +18,12 @@
 - [copyClipboardApi](default.md#copyclipboardapi)
 - [copyExecCommand](default.md#copyexeccommand)
 - [customError](default.md#customerror)
-- [setText](default.md#settext)
 
 ## Constructors
 
 ### constructor
 
-• **new default**(`text`)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `text` | `string` |
-
-#### Defined in
-
-[index.ts:2](https://github.com/magicLaLa/ClipboardCopy/blob/4b188b5/src/index.ts#L2)
+• **new default**()
 
 ## Properties
 
@@ -44,15 +33,21 @@
 
 #### Defined in
 
-[index.ts:2](https://github.com/magicLaLa/ClipboardCopy/blob/4b188b5/src/index.ts#L2)
+[index.ts:2](https://github.com/magicLaLa/ClipboardCopy/blob/f0a0d8c/src/index.ts#L2)
 
 ## Methods
 
 ### copy
 
-▸ **copy**(): `Promise`<`void` \| `Error`\>
+▸ **copy**(`text`): `Promise`<`void` \| `Error`\>
 
 复制方法
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `text` | `string` |
 
 #### Returns
 
@@ -60,7 +55,7 @@
 
 #### Defined in
 
-[index.ts:21](https://github.com/magicLaLa/ClipboardCopy/blob/4b188b5/src/index.ts#L21)
+[index.ts:7](https://github.com/magicLaLa/ClipboardCopy/blob/f0a0d8c/src/index.ts#L7)
 
 ___
 
@@ -74,7 +69,7 @@ ___
 
 #### Defined in
 
-[index.ts:33](https://github.com/magicLaLa/ClipboardCopy/blob/4b188b5/src/index.ts#L33)
+[index.ts:20](https://github.com/magicLaLa/ClipboardCopy/blob/f0a0d8c/src/index.ts#L20)
 
 ___
 
@@ -88,7 +83,7 @@ ___
 
 #### Defined in
 
-[index.ts:38](https://github.com/magicLaLa/ClipboardCopy/blob/4b188b5/src/index.ts#L38)
+[index.ts:25](https://github.com/magicLaLa/ClipboardCopy/blob/f0a0d8c/src/index.ts#L25)
 
 ___
 
@@ -102,28 +97,4 @@ ___
 
 #### Defined in
 
-[index.ts:67](https://github.com/magicLaLa/ClipboardCopy/blob/4b188b5/src/index.ts#L67)
-
-___
-
-### setText
-
-▸ **setText**(`text`): [`default`](default.md)
-
-设置文案
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `text` | `string` | 文案内容 |
-
-#### Returns
-
-[`default`](default.md)
-
-this 当前实例
-
-#### Defined in
-
-[index.ts:13](https://github.com/magicLaLa/ClipboardCopy/blob/4b188b5/src/index.ts#L13)
+[index.ts:54](https://github.com/magicLaLa/ClipboardCopy/blob/f0a0d8c/src/index.ts#L54)

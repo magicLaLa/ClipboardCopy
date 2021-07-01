@@ -1,24 +1,11 @@
 class ClipboardCopy {
   private str: string = '';
 
-  constructor(text: string) {
-    this.str = text || '';
-  }
-
-  /**
-   * 设置文案
-   * @param text 文案内容
-   * @returns this 当前实例
-   */
-  public setText(text: string) {
-    this.str = text;
-    return this;
-  }
-
   /**
    * 复制方法
    */
-  public async copy(): Promise<Error | void> {
+  public async copy(text: string): Promise<Error | void> {
+    this.str = text;
     try {
       await this.copyClipboardApi();
     } catch (err) {

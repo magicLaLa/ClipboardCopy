@@ -1,6 +1,6 @@
-[clipboardcopy](README.md) / Exports
+[@magic-tao/clipboardcopy](../README.md) / Exports
 
-# clipboardcopy
+# @magic-tao/clipboardcopy
 
 ## Table of contents
 
