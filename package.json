@@ -1,6 +1,6 @@
 {
   "name": "@magic-tao/clipboardcopy",
-  "version": "1.0.2-3",
+  "version": "1.0.2-4",
   "description": "A simple clipboardcopy",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",

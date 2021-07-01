@@ -1,3 +1,12 @@
+## [1.0.2-4](https://github.com/magicLaLa/ClipboardCopy/compare/v1.0.2-3...v1.0.2-4) (2021-07-01)
+
+
+### Features
+
+* 优化代码结构和修改文档 ([57d20c5](https://github.com/magicLaLa/ClipboardCopy/commit/57d20c56a28563eeded084ba85398bb711e03d91))
+
+
+
 ## [1.0.2-3](https://github.com/magicLaLa/ClipboardCopy/compare/v1.0.2-2...v1.0.2-3) (2021-06-30)
 
 
